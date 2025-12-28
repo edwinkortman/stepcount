@@ -1,8 +1,10 @@
 use crate::stepcount::stepcount::stepcount;
+use crate::memstep::memstep::memstep;
 use clap::Parser;
 use std::time::{Instant};
 
 mod stepcount;
+mod memstep;
 
 #[derive(Parser)]
 struct Cli {
@@ -26,6 +28,7 @@ fn main() {
                 println!("Result: {}", stepcount(args.stepcount, args.steps))
             }
         },
+        "memstep" => println!("Result: {}", memstep(args.stepcount, args.steps)),
         _ => println!("Unsupported method: {}", args.method),
     }
     let duration = start.elapsed();

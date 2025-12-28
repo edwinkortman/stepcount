@@ -14,3 +14,8 @@ For the naive stepcount algorithm:
 ```shell
 cargo run -- stepcount 10 1,3,5
 ```
+
+For the memoized stepcount algorithm:
+```shell
+cargo run -- memstep 100 1,3,5
+```
