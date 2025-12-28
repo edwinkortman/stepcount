@@ -1,4 +1,4 @@
-// https://www.youtube.com/watch?v=JXUOMsFBDXQ
+// Source: https://www.youtube.com/watch?v=JXUOMsFBDXQ
 // Returns a 1 if the sequence found is valid
 // Returns a 0 if the sequence found is invalid
 pub fn stepcount(n: i32, steps: Vec<i32>) -> i32 {
